@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>RPG Developer Bakin Welcome Page</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+            width: 100vw;
+            background-color: white; /* Changed to white */
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            position: relative;
+            font-family: Arial, sans-serif;
+            overflow: hidden;
+        }
+        .header {
+            width: 100%;
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+            padding: 1vh 2vw;
+            box-sizing: border-box;
+        }
+        .logo-right {
+            display: flex;
+            align-items: center;
+        }
+        .logo-icon {
+            width: 15vw;
+            height: 5vw;
+            object-fit: contain; /* Ensure the logo scales properly */
+        }
+        .main-content {
+            width: 90vw;
+            text-align: left;
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            padding-bottom: 2vh;
+            box-sizing: border-box;
+        }
+        .content-section {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .character-bg {
+            width: 40vw;
+            height: 40vh; /* Adjusted height to accommodate the new button */
+            object-fit: cover; /* Ensure the image fits the area */
+            margin-right: 2vw;
+        }
+        .text-content {
+            flex: 1;
+        }
+        .text-content h1 {
+            font-size: 3vw;
+            margin: 0 0 1vh 0;
+            color: black;
+        }
+        .text-content p {
+            margin: 0.5vh 0;
+            font-size: 1.5vw;
+            line-height: 1.3;
+        }
+        .bullet-point {
+            display: flex;
+            align-items: flex-start;
+            margin: 1vh 0;
+        }
+        .bullet-icon {
+            width: 2vw;
+            height: 2vw;
+            background-color: #ccc;
+            border-radius: 50%;
+            margin-right: 1vw;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1vw;
+            color: #666;
+        }
+        .bullet-text {
+            font-size: 1.5vw;
+            line-height: 1.3;
+        }
+        .term {
+            font-weight: bold;
+        }
+        .wiki-button-section {
+            margin-top: 1vh;
+            text-align: left;
+        }
+        .wiki-button {
+            font-size: 2vw;
+            padding: 1vh 2vw;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+            text-decoration: none;
+            display: inline-block;
+        }
+        .wiki-button:hover {
+            background-color: #0056b3;
+        }
+        .footer {
+            width: 100%;
+            background-color: #007bff; /* Blue background for the rectangle */
+            position: absolute;
+            bottom: 0;
+            padding: 1vh 0;
+            box-sizing: border-box;
+            text-align: center;
+        }
+        .footer-text {
+            color: white;
+            font-size: 2vw;
+            margin: 0;
+        }
+        .footer-text a {
+            color: white;
+            text-decoration: none;
+        }
+        .footer-text a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <div class="logo-right">
+            <img src="logo.png" alt="RPG Developer Bakin Logo" class="logo-icon">
+        </div>
+    </div>
+    <div class="main-content">
+        <div class="content-section">
+            <img src="characters-bg.png" alt="Characters and Background" class="character-bg">
+            <div class="text-content">
+                <h1>Welcome!</h1>
+                <h1>Create a game of <span class="term">[your own story]</span> with RPG Developer Bakin!</h1>
+                <div class="bullet-point">
+                    <div class="bullet-icon">•</div>
+                    <p class="bullet-text">
+                        <span class="term">If you are new to this type of tool...</span><br>
+                        Let's play <span class="term">[Orb Stories]</span> in the <span class="term">[Game Gallery]</span>.<br>
+                        After that, take a closer look inside the project to see how <span class="term">[Orb Stories]</span> is made.
+                    </p>
+                </div>
+                <div class="bullet-point">
+                    <div class="bullet-icon">•</div>
+                    <p class="bullet-text">
+                        <span class="term">If you already have experience in game creation using this type of tool...</span><br>
+                        You can also start creating a game from the <span class="term">[Create New]</span>. However, if you modify <span class="term">[Orb Stories]</span> to start with, you will be able to understand this tool more quickly.
+                    </p>
+                </div>
+                <p>
+                    If you are not sure what to do, please refer to the manual on the official RPG Developer Bakin website.
+                </p>
+                <div class="wiki-button-section">
+                    <a href="https://rpgbakin.com/pukiwiki_en/" class="wiki-button" target="_blank" rel="noopener noreferrer">Visit the Official RPG Developer Bakin Wiki</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <p class="footer-text">
+            Translated by <a href="https://rpgbakin.com/en/" target="_blank" rel="noopener noreferrer">YOUR NAME HERE</a>
+        </p>
+    </div>
+</body>
+</html>

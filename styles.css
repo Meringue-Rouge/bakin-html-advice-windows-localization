@@ -1,0 +1,93 @@
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    width: 100vw;
+    background-color: #f5f5dc;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    font-family: Arial, sans-serif;
+    overflow: hidden;
+}
+body::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('bg.png');
+    background-size: cover;
+    opacity: 0.5;
+    z-index: -1;
+}
+.header {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1vh 2vw;
+    box-sizing: border-box;
+}
+.logo-left, .logo-right {
+    display: flex;
+    align-items: center;
+}
+.logo-icon {
+    max-width: 15vw;
+    margin-right: 1vw;
+}
+.header-text {
+    font-weight: bold;
+    font-size: 2vw;
+    color: black;
+}
+.header-text .accent {
+    color: blue;
+}
+.main-content {
+    width: 90vw;
+    text-align: left;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-bottom: 2vh;
+    box-sizing: border-box;
+}
+.main-content p {
+    margin-bottom: 1vh;
+    font-size: 1.5vw;
+    line-height: 1.3;
+}
+.main-content p:first-child {
+    color: orange;
+}
+.term {
+    font-weight: bold;
+}
+.wiki-section {
+    text-align: center;
+    margin-top: 1vh;
+}
+.wiki-text {
+    font-size: 1.5vw;
+    margin-bottom: 1vh;
+}
+.wiki-button {
+    font-size: 2vw;
+    padding: 1vh 2vw;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    text-decoration: none;
+    display: inline-block;
+}
+.wiki-button:hover {
+    background-color: #0056b3;
+}
